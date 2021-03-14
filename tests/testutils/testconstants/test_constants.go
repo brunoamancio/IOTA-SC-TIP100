@@ -2,7 +2,14 @@ package testconstants
 
 const (
 	// ContractName is defined in smartcontract/rust/Cargo.toml > package > name
-	ContractName = "erc_721"
+	ContractName = "tip_100"
+
+	// NameFuncImplements is defined in smartcontract/iota_sc_utils/src/interfaces.rs > NAME_FUNC_IMPLEMENTS
+	NameFuncImplements = "implements"
+
+	// NameInterfaceTip100 is defined in smartcontract/iota_sc_utils/src/interfaces.rs > INTERFACE_TIP_100
+	NameInterfaceTip100 = "tip_100"
+
 	// Debug is used by Solo. 'true' for logging level 'debug', otherwise 'info'
 	Debug = false
 	// StackTrace is used by Solo. 'true' if stack trace must be printed in case of errors
