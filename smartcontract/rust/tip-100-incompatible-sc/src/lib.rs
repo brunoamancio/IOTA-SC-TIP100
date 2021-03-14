@@ -1,4 +1,4 @@
-use wasmlib::{ScExports, ScViewContext, ScBaseContext};
+use iota_sc_utils::wasmlib::{ScExports, ScViewContext, ScBaseContext};
 
 #[no_mangle]
 pub fn on_load() {

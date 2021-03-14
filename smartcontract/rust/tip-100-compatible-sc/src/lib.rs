@@ -1,4 +1,4 @@
-use wasmlib::{ScExports, ScViewContext};
+use iota_sc_utils::wasmlib::{ScExports, ScViewContext};
 use iota_sc_utils::{params, results, interfaces};
 
 #[no_mangle]
