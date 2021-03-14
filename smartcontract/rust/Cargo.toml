@@ -1,0 +1,26 @@
+  
+[package]
+edition = "2018"
+name = "erc_721"
+description = "This is an implementation of the ERC-721 standard for ISCP (IOTA Smart Contract Protocol)"
+license = "MIT"
+version = "0.0.1"
+authors = ["Th3B0Y"]
+repository = "https://github.com/brunoamancio/IOTA-SC-ERC721"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["console_error_panic_hook"]
+
+[dependencies]
+console_error_panic_hook = { version = "0.1.6", optional = true }
+wee_alloc = { version = "0.4.5", optional = true }
+
+wasmlib = { path = "wasp/contracts/rust/wasmlib" }
+iota_sc_utils = { path = "iota_sc_utils" }
+iota-sc-hname-generator = "1.1.1"
+
+[dev-dependencies]
+wasm-bindgen-test = "0.3.13"
