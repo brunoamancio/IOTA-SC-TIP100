@@ -8,8 +8,15 @@ import (
 )
 
 // MustGetContractWasmFilePath ensures a given smart contract's wasm file exists
-func MustGetContractWasmFilePath(t *testing.T, contractName string) string {
-	const targetPath = "../smartcontract/rust/pkg/"
+func MustGetContractWasmFilePath(t *testing.T, contractName string, compatible bool) string {
+	var contractDirectory string
+	if compatible {
+		contractDirectory = "tip-100-compatible-sc"
+	} else {
+		contractDirectory = "tip-100-incompatible-sc"
+	}
+
+	targetPath := "../smartcontract/rust/" + contractDirectory + "/pkg/"
 	const parentDirectoryLevel = "../"
 
 	filePath := targetPath + contractName + "_bg.wasm"
