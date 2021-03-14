@@ -6,3 +6,4 @@ edition = "2018"
 
 [dependencies]
 wasmlib = { path = "../wasp/contracts/rust/wasmlib" }
+iota-sc-hname-generator = "1.1.1"
