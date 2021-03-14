@@ -1,7 +1,7 @@
 [package]
 name = "iota_sc_utils"
-version = "0.1.0"
-authors = ["Th3B0Y <brunoamancio.ti@gmail.com>"]
+version = "0.2.0"
+authors = ["Th3B0Y <constantlychanging@pm.me>"]
 edition = "2018"
 
 [dependencies]
