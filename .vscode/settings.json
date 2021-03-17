@@ -4,7 +4,7 @@
     "**/LICENSE": true,
     "**/go.sum": true,
     "**/.git*": true,
-    "*.md": true,
+   // "*.md": true,
 
     "general-docs": true,
     "**/target/": true,
